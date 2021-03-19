@@ -6,8 +6,8 @@ class Painting < ApplicationRecord
         response = HarvardSearch.new
         #saves response to instance variable painting
         paintings = response.paintings
-        paintings.each{|painting| create_from_harvard_data(painting)}
-        byebug 
+        #calls class method below to create new instances for each painting
+        paintings.each{|painting| create_from_harvard_data(painting)} 
     end
 
     def self.create_from_harvard_data(painting)
