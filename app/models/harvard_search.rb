@@ -5,9 +5,10 @@ class HarvardSearch
     def initialize(query)
 
         url = "https://api.harvardartmuseums.org/object?classification=26"
-        culture = "&culture=#{query}"
+        query = "&q=title:#{query}"
         api = "&apikey=1d2099ee-3f1e-46ff-bd4c-71d7ef213836"
-        data = RestClient.get(url + culture + api)
+        size = "&size=20"
+        data = RestClient.get(url + query + api + size)
         @paintings = JSON.parse(data)["records"]
 
         # paintings.each do |painting|

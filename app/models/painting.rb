@@ -1,7 +1,7 @@
 class Painting < ApplicationRecord
 
 
-    def self.get_paintings_from_harvard(query = "British")
+    def self.get_paintings_from_harvard(query = "Dog")
         #initiates new call to harvard art museum api
         response = HarvardSearch.new(query)
         #saves response to instance variable painting
@@ -10,11 +10,13 @@ class Painting < ApplicationRecord
         paintings.each{|painting| create_from_harvard_data(painting)} 
     end
 
+     #century, culture, medium, dimensions 
+
     def self.create_from_harvard_data(painting)
         create(
             title: painting["title"],
             image: painting["primaryimageurl"],
-            artist: painting["people"][0]["name"] 
+            artist: painting["people"][0]["name"]
         )
     end
 end
