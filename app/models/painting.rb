@@ -10,13 +10,15 @@ class Painting < ApplicationRecord
         paintings.each{|painting| create_from_harvard_data(painting)} 
     end
 
-     #century, culture, medium, dimensions 
-
     def self.create_from_harvard_data(painting)
         create(
             title: painting["title"],
             image: painting["primaryimageurl"],
-            artist: painting["people"][0]["name"]
+            artist: painting["people"][0]["name"],
+            century: painting["century"],
+            culture: painting["culture"],
+            medium: painting["medium"],
+            dimensions: painting["dimensions"]
         )
     end
 end
