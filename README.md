@@ -1,6 +1,6 @@
 # README
 
-React frontend repo can be found here: https://github.com/jcport1/react-frontend. 
+React frontend repo can be found here: https://github.com/jcport1/react-frontend.
 
 <!-- This README would normally document whatever steps are necessary to get the
 application up and running.
