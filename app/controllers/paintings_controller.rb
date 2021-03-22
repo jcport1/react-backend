@@ -2,9 +2,14 @@ class PaintingsController < ApplicationController
 
     require 'rest-client'
 
+    def index 
+         
+        render json: Painting.all 
+    end
+
     def paintings_index
  
-        url = "https://api.harvardartmuseums.org/object?classification=26&q=title:flowers&apikey=1d2099ee-3f1e-46ff-bd4c-71d7ef213836"
+        url = "https://api.harvardartmuseums.org/object?classification=26&q=title:cat&apikey=1d2099ee-3f1e-46ff-bd4c-71d7ef213836"
         response = RestClient.get("#{url}") 
         render json: response
         
