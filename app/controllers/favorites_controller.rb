@@ -14,9 +14,9 @@ class FavoritesController < ApplicationController
             culture: params[:painting][:culture],
             medium: params[:painting][:medium],
             dimensions: params[:painting][:dimensions]) 
-    
-        render json: @new_painting
-
+            
+            render json: @new_painting
+                
     end
 
     def destroy
