@@ -5,8 +5,9 @@ class FavoritesController < ApplicationController
     end
 
     def create
-
+ 
         @new_painting = Painting.create( 
+             
             id: params[:painting][:id],
             title: params[:painting][:title],
             image: params[:painting][:primaryimageurl],
