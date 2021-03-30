@@ -6,11 +6,12 @@ class FavoritesController < ApplicationController
 
     def create
 
-        @new_painting = Painting.create(
+        @new_painting = Painting.create( 
             id: params[:painting][:id],
             title: params[:painting][:title],
             image: params[:painting][:primaryimageurl],
             artist: params[:painting][:people][0][:name],
+            century: params[:painting][:century],
             culture: params[:painting][:culture],
             medium: params[:painting][:medium],
             dimensions: params[:painting][:dimensions]) 
