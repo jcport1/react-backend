@@ -1,26 +1,30 @@
-# README
+# Art Explorer Backend
 
-React frontend repo can be found here: https://github.com/jcport1/react-frontend.
+A virtual art gallery application that allows the user to search for and browse an extensive collection of paintings from a celebrated art museum.
 
-<!-- This README would normally document whatever steps are necessary to get the
-application up and running.
+# Get Started
 
-Things you may want to cover:
+## Install:
 
-* Ruby version
+Frontend 
+* Refer to frontend repo for full application instructions: https://github.com/jcport1/react-frontend. 
 
-* System dependencies
+Backend 
+* Clone [Rails API backend](https://github.com/jcport1/react-backend):
+* CD into the directory housing the cloned repository 
+* Run bundle install
+* Run rails db:migrate
+* Run rails s
 
-* Configuration
+## Contributors Guide 👋
 
-* Database creation
+Bug reports and pull requests are welcome on GitHub at https://github.com/jcport1. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-* Database initialization
+### Code of Conduct
 
-* How to run the test suite
+Everyone interacting in the JavaScript Virtual Swap App's codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
 
-* Services (job queues, cache servers, search engines, etc.)
+### License
 
-* Deployment instructions
+The app is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-* ... -->
