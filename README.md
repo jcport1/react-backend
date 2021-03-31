@@ -7,10 +7,10 @@ A virtual art gallery application that allows the user to search for and browse 
 ## Install:
 
 Frontend 
-* Refer to frontend repo for full application instructions: https://github.com/jcport1/react-frontend. 
+* Refer to [frontend repo](https://github.com/jcport1/react-frontend) for full application instructions
 
 Backend 
-* Clone [Rails API backend](https://github.com/jcport1/react-backend):
+* Clone [Rails API backend](https://github.com/jcport1/react-backend)
 * CD into the directory housing the cloned repository 
 * Run bundle install
 * Run rails db:migrate
