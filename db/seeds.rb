@@ -7,6 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# Painting.get_paintings_from_harvard
 
 
